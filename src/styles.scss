@@ -1,4 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.base-card {
+  background-color: #fff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+:root {
+  // Variaveis de fonte
+
+  --font-small: 14px;
+
+  --font-base: 16px;
+
+  --font-h1: 48px;
+
+  --font-h2: 40px;
+
+  --font-h3: 32px;
+
+  --font-h4: 24px;
+
+  --font-h5: 20px;
+
+  @media (max-width: 800px) {
+    --font-small: 12px;
+
+    --font-base: 14px;
+
+    --font-h1: 40px;
+
+    --font-h2: 32px;
+
+    --font-h3: 24px;
+
+    --font-h4: 20px;
+
+    --font-h5: 16px;
+  }
+}
+
+$theme-colors: (
+  "primary": #b51a3a,
+);
+
+$body-bg: #fff0f3;
+$body-color: #5e081e;
+
+@import "~bootstrap/scss/bootstrap.scss";
