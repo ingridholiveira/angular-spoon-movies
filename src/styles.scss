@@ -26,7 +26,7 @@ h6 {
 
   --font-small: 14px;
 
-  --font-base: 16px;
+  --font-base: 18px;
 
   --font-h1: 48px;
 
@@ -41,7 +41,7 @@ h6 {
   @media (max-width: 800px) {
     --font-small: 12px;
 
-    --font-base: 14px;
+    --font-base: 16px;
 
     --font-h1: 40px;
 
@@ -51,15 +51,14 @@ h6 {
 
     --font-h4: 20px;
 
-    --font-h5: 16px;
+    --font-h5: 18px;
   }
 }
 
 $theme-colors: (
-  "primary": #b51a3a,
+  "primary": #3c1361,
 );
 
 $body-bg: #fff0f3;
-$body-color: #5e081e;
 
 @import "~bootstrap/scss/bootstrap.scss";

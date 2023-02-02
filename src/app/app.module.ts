@@ -7,8 +7,25 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 
+import { ResultCardComponent } from './result-card/result-card.component';
+import { CustomModalComponent } from './custom-modal/custom-modal.component';
+import { SearchCardComponent } from './search-card/search-card.component';
+import { TopbarComponent } from './topbar/topbar.component';
+import { FootbarComponent } from './footbar/footbar.component';
+import { FavlistComponent } from './favlist/favlist.component';
+
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+
+    ResultCardComponent,
+    CustomModalComponent,
+    SearchCardComponent,
+    TopbarComponent,
+    FootbarComponent,
+    FavlistComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

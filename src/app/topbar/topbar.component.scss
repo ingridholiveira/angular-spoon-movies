@@ -1,0 +1,14 @@
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  color: #b51a3a;
+}
