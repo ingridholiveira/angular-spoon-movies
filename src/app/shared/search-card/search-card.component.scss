@@ -22,9 +22,10 @@
   width: 100%;
 }
 
-.input-container input {
+.input-group input {
   display: flex;
   width: 100%;
+  border-radius: 5px !important;
 }
 
 .button-container {

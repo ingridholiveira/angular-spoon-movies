@@ -55,6 +55,7 @@ export class SearchCardComponent implements OnInit {
   clearSelection() {
     this.selectedMovie = '';
     this.filteredMovies = [];
+    this.searchTitleSelection();
   }
 
   searchTitleSelection() {

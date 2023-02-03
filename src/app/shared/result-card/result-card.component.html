@@ -7,7 +7,7 @@
           <h6>
             {{ movie.Plot }}
           </h6>
-          <p><b>Elenco : </b>{{ movie.Actors }}</p>
+          <p><b>Cast : </b>{{ movie.Actors }}</p>
           <p>
             <b>Review : </b>
             <span *ngFor="let a of review">
@@ -16,7 +16,7 @@
           </p>
           <p>
             <button type="button">
-              Salvar<mat-icon id="icon">bookmark_border</mat-icon>
+              Add to Favorite<mat-icon id="icon">bookmark_border</mat-icon>
             </button>
           </p>
         </div>

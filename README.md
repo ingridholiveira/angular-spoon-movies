@@ -29,7 +29,7 @@ Abra a pasta clonada no seu editor de código ou diretamente no terminal do seu 
 ⚙️ Para rodar a SPA:
 
 ```
-Pelo terminal abra a pasta spoon-movies;
+Pelo terminal abra a pasta angular-spoon-movies;
 Rode no terminal o comando: npm install;
 Ao terminar rode no terminal o comando: ng serve
 ```
