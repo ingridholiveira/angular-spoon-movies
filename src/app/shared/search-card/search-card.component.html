@@ -3,8 +3,8 @@
     <div class="first-container base-card">
       <h2>Spoon & Movies</h2>
       <p>
-        Pesquise seus filmes favoritos e salve em uma lista para assistir com
-        sua pessoa especial nesse dia dos namorados.
+        Search and find your favorite movies to watch with your significant
+        other in this Valentine's Day while a romantic dinner date.
       </p>
       <div class="search-container">
         <div class="input-group mb-2">
@@ -13,15 +13,45 @@
             class="form-control"
             id="label"
             aria-describedby="basic-addon3"
-            placeholder="Digite o nome do filme"
+            placeholder="Type the movie name"
+            [(ngModel)]="selectedMovie"
+            [matAutocomplete]="auto"
+            [formControl]="searchMoviesCtrl"
+            (keydown.enter)="searchTitleSelection()"
           />
+          <mat-autocomplete
+            #auto="matAutocomplete"
+            (optionSelected)="onSelected()"
+            [displayWith]="displayWith"
+          >
+            <mat-option *ngIf="isLoading" class="is-loading"
+              >Searching...</mat-option
+            >
+            <ng-container *ngIf="!isLoading">
+              <mat-option *ngFor="let movie of filteredMovies" [value]="movie">
+                <span
+                  ><b>{{ movie.Title }}</b> ({{ movie.Year }})</span
+                >
+              </mat-option>
+            </ng-container>
+          </mat-autocomplete>
         </div>
 
         <div class="button-container">
-          <button type="button" class="btn btn-outline-primary">
-            Procurar
+          <button
+            type="button"
+            class="btn btn-outline-primary"
+            (click)="searchTitleSelection()"
+          >
+            Search
           </button>
-          <button type="button" class="btn btn-primary">Limpar</button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            (click)="clearSelection()"
+          >
+            Reset
+          </button>
         </div>
       </div>
     </div>

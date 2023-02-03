@@ -1,8 +1,10 @@
 <div class="main">
   <app-topbar></app-topbar>
   <div class="container principal-container">
-    <app-search-card></app-search-card>
-    <app-result-card></app-result-card>
+    <app-search-card (onSelectValue)="selectValue($event)"></app-search-card>
+    <ng-container *ngIf="movieSelected">
+      <app-result-card [movie]="movieSelected"></app-result-card>
+    </ng-container>
   </div>
   <app-footbar></app-footbar>
 </div>

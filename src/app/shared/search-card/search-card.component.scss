@@ -29,7 +29,7 @@
 
 .button-container {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   flex-direction: column;
   width: 100%;
   margin: 5px;
@@ -68,6 +68,16 @@
 
   .first-container {
     min-height: 190px;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-container button {
+    height: 60px;
+  }
+  .input-group input {
+    height: 60px;
+    margin-bottom: 10px;
   }
 }
 
